@@ -1,4 +1,4 @@
-// 인터페이스
+// 인터페이스: 변수를 정의
 interface User {
   name: string;
   age: number;
@@ -30,11 +30,24 @@ getUser(seho);
 // arr[0] = 'hi';
 // arr[1] = 10;
 
+//  딕셔너리 패턴
+ interface StringRegexDictionary {
+  [key: string]: RegExp
+ }
+ var obj = {
+  sth: /abc/,
+  cssFile: /\.css$/,
+  jsFile: /\.js$/
+ }
+
+ Object.keys(obj).forEach(function(value){});
+
 // 인터페이스 확장
 interface Person {
   name: string;
   age: number; // 옵셔널 선택자 ? 동일하게 적용 가능
 }
+// Developer와 Person이 겹치는 속성이 있어서 Person을 상속받음
 interface Developer extends Person {
   language: string;
 }

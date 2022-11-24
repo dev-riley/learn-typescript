@@ -12,12 +12,12 @@ function sum(a: SumParameter, b: SumParameter) {
 }
 
 // #2
-type Person = {
+type Person1 = {
   name: string;
   age: number;
 };
 
-function getPerson(): Person {
+function getPerson(): void {
   // ...
 }
 
@@ -27,5 +27,5 @@ type Hero = {
 }
 
 const capt: Hero = { 
-  // skill: 'throwing a shield' 
+  skill: 'throwing a shield' 
 }
